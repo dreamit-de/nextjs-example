@@ -1,0 +1,40 @@
+{
+  "name": "nextjs-example",
+  "version": "1.0.0",
+  "description": "Example NodeJS app using Next.js",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgohlke/nextjs-example.git"
+  },
+  "author": "Stefan Gohlke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgohlke/nextjs-example/issues"
+  },
+  "homepage": "https://github.com/sgohlke/nextjs-example#readme",
+  "dependencies": {
+    "@dreamit/graphql-server": "file:dreamit-graphql-server-3.0.0.tgz",
+    "graphql": "^16.6.0",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.8.0",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1",
+    "typescript": "4.8.4"
+  }
+
+
+
+}

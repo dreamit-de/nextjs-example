@@ -98,10 +98,5 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ExecutionResult>
 ) {
-  await graphqlServer.handleRequest( {
-    url: req.url || '',
-    method: req.method,
-    headers: req.headers,
-    body: req.body
-  } , res)
+  await graphqlServer.handleRequest(req, res)
 }

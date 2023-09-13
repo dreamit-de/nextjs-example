@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/sgohlke/nextjs-example#readme",
   "dependencies": {
-    "@dreamit/graphql-server": "4.2.6",
+    "@dreamit/graphql-server": "4.2.7",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0"

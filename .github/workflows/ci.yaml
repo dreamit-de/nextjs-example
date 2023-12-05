@@ -1,18 +1,6 @@
-name: Install and test ts-base-dependencies
+name: Install nextjs-example
 on: [push]
 
 jobs:
-  tsbasedependencies:
-    name: Check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '18.x'
-      - name: Install dependencies
-        run: npm ci
-      - name: Check for linting issues
-        run: npm run lint
-      - name: Run build
-        run: npm run build
+    nitroexample:
+      uses: dreamit-de/workflows/.github/workflows/nodejs-ci.yml@main

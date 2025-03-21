@@ -24,7 +24,7 @@
   "dependencies": {
     "@dreamit/graphql-server": "4.13.1",
     "@dreamit/graphql-testing": "0.1.2",
-    "next": "15.2.2",
+    "next": "15.2.3",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },

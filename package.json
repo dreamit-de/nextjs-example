@@ -22,18 +22,18 @@
   },
   "homepage": "https://github.com/sgohlke/nextjs-example#readme",
   "dependencies": {
-    "@dreamit/graphql-server": "4.13.1",
+    "@dreamit/graphql-server": "4.13.3",
     "@dreamit/graphql-testing": "0.1.2",
     "next": "15.2.4",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@types/node": "22.13.14",
-    "@types/react": "19.0.12",
-    "@types/react-dom": "19.0.4",
+    "@types/node": "22.14.0",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
     "eslint-config-next": "15.2.4",
-    "typescript": "5.8.2",
-    "typescript-eslint": "8.29.0"
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.29.1"
   }
 }

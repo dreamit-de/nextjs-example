@@ -28,5 +28,16 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ExecutionResult>
 ) {
-  await graphqlServer.handleRequest(req, res)
+  graphqlServer.handleRequest(req, {
+    end: function(chunk) {
+      res.end(chunk)
+      return this
+  },
+    removeHeader: res.removeHeader,
+    setHeader: function(name, value) {
+      res.setHeader(name, value)
+      return this 
+  },
+    statusCode: res.statusCode
+  })
 }

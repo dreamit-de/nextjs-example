@@ -1,9 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import {
-  buildSchema,
-  GraphQLError,
-  GraphQLSchema,
   ExecutionResult
 } from 'graphql'
 
@@ -28,5 +25,16 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ExecutionResult>
 ) {
-  await graphqlServer.handleRequest(req, res)
+  await graphqlServer.handleRequest(req, {
+    end: function(chunk) {
+      res.end(chunk)
+      return this
+  },
+    removeHeader: res.removeHeader,
+    setHeader: function(name, value) {
+      res.setHeader(name, value)
+      return this 
+  },
+    statusCode: res.statusCode
+  })
 }

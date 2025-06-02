@@ -25,16 +25,16 @@
     "@dreamit/graphql-server": "5.0.2",
     "@dreamit/graphql-server-base": "3.0.1",
     "@dreamit/graphql-testing": "1.0.1",
-    "next": "15.3.2",
+    "next": "15.3.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@types/node": "22.15.21",
-    "@types/react": "19.1.5",
+    "@types/node": "22.15.29",
+    "@types/react": "19.1.6",
     "@types/react-dom": "19.1.5",
-    "eslint-config-next": "15.3.2",
+    "eslint-config-next": "15.3.3",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.32.1"
+    "typescript-eslint": "8.33.1"
   }
 }
